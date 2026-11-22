@@ -1,0 +1,27 @@
+---
+const layers = [
+  'Evavind Desktop / Applications',
+  'System Services / LibOS',
+  'Orfreon · Planned Architecture',
+];
+---
+<section class="architecture" id="architecture" tabindex="-1" aria-labelledby="architecture-title">
+  <div class="architecture-header">
+    <h2 id="architecture-title">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="2.5" y="2.5" width="11" height="11" rx="1.5" />
+        <path d="m5 6 2 2-2 2m3.5 0h2" />
+      </svg>
+      Architecture Preview
+    </h2>
+    <div class="panel-lights" aria-hidden="true"><span></span><span></span><span></span></div>
+  </div>
+  <ol class="layers" aria-label="Conceptual future architecture">
+    {layers.map((layer, index) => (
+      <li>
+        <div class="layer">{layer}</div>
+        {index < layers.length - 1 && <span class="layer-arrow" aria-hidden="true">↓</span>}
+      </li>
+    ))}
+  </ol>
+</section>

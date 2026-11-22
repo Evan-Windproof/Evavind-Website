@@ -1,0 +1,19 @@
+---
+import ArchitecturePreview from '../components/ArchitecturePreview.astro';
+import Hero from '../components/Hero.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const description = 'Evavind OS is an experimental open-source desktop operating system exploring freedom, performance and a more independent computing experience.';
+---
+<BaseLayout title="Evavind OS — Freedom to Create" description={description}>
+  <main id="main-content" tabindex="-1">
+    <Hero />
+    <ArchitecturePreview />
+    <section class="project-info" id="explore" tabindex="-1" aria-labelledby="explore-title">
+      <h2 id="explore-title">What is Evavind OS?</h2>
+      <p>Evavind OS is an open-source desktop operating system project in early development. It explores how a desktop can give people more control over their computing experience while pursuing performance.</p>
+      <p>Earlier project documentation describes a Linux-based direction. The long-term vision explores an exokernel-based architecture with Orfreon. The diagram above shows that concept, and the architecture is still planned.</p>
+      <p>Developing in the open makes it possible for anyone to read the code, follow design decisions, and contribute to the project as it evolves.</p>
+    </section>
+  </main>
+</BaseLayout>

@@ -1,0 +1,15 @@
+---
+import { repositories } from '../project';
+---
+<footer class="site-footer">
+  <div>
+    <strong>Evavind OS</strong>
+    <p>Project status: Early Development</p>
+  </div>
+  <nav aria-label="Project repositories">
+    <a href={repositories.os}>Evavind OS on GitHub</a>
+    <a href={repositories.website}>Website on GitHub</a>
+    <a href={repositories.orfreon}>Orfreon</a>
+  </nav>
+  <small>© {new Date().getUTCFullYear()} Evavind OS contributors</small>
+</footer>

@@ -1,0 +1,14 @@
+---
+import GitHubIcon from './GitHubIcon.astro';
+import { repositories } from '../project';
+---
+<section class="hero" aria-labelledby="hero-title">
+  <p class="status-badge">EARLY DEVELOPMENT · OPEN SOURCE</p>
+  <h1 id="hero-title">Evavind OS</h1>
+  <p class="tagline">Freedom to Create.</p>
+  <p class="hero-description">An experimental desktop operating system exploring freedom, performance and a more independent computing experience.</p>
+  <div class="hero-actions">
+    <a class="button button-primary" href="#explore">Explore the Project</a>
+    <a class="button button-secondary" href={repositories.os}><GitHubIcon /> GitHub</a>
+  </div>
+</section>
